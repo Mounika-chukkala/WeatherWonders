@@ -1,0 +1,46 @@
+.container{
+    height:70vh;
+    margin-top:30px;
+    margin-bottom:30px ;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 250px;
+    border:1px solid paleturquoise;
+}
+.card-header{
+    background-color: paleturquoise;
+}
+#tinfo,#hinfo,#winfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.img{
+    width:30px;
+    padding-bottom: 10px;
+}
+.header{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    width:60px;
+}
+/* document.getElementById("cloud_pct").innerHTML =response.cloud_pct 
+    document.getElementById("temp").innerHTML      =response.temp      
+    // document.getElementById("feels_like").innerHTML=response.feels_like 
+    // document.getElementById("humidity").innerHTML  =response.humidity  
+    document.getElementById("min_temp").innerHTML  =response.min_temp  
+    document.getElementById("max_temp").innerHTML  =response.max_temp  
+    // document.getElementById("wind_speed").innerHTML =response.wind_speed
+    // document.getElementById("wind_degrees").innerHTML=response.wind_degrees 
+    // document.getElementById("sunrise").innerHTML   =response.sunrise    
+    // document.getElementById("sunset").innerHTML    =response.sunset     */
