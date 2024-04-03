@@ -1,3 +1,11 @@
+body{
+    background-image:url("http://127.0.0.1:5500/images/bg.jpeg");
+    
+    background-repeat: no-repeat;
+background-size:500%;
+    
+}
+
 .container{
     height:70vh;
     margin-top:30px;
