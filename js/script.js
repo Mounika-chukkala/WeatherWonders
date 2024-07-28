@@ -1,4 +1,4 @@
-let url ="https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=ongole";
+let url ="https://weather-api138.p.rapidapi.com/weather?city_name=ongole";
 
 const options = {
 	method: 'GET',
@@ -13,7 +13,7 @@ getWeather("ongole")
 async function getWeather(city) {
 try{
     let url =
-    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city;
+    "'https://weather-api138.p.rapidapi.com/weather?city_name=" + city;
   
   let response = await fetch(url, options);
   response = await response.json();
@@ -27,7 +27,7 @@ try{
           
           // Update HTML elements if all values are defined
     if(response.temp!==undefined){
-        cityName.innerHTML = city;
+        cityName.innerHTML = city_name;
   cloud_pct.innerHTML = response.cloud_pct;
   temp.innerHTML = response.temp;
   tempbig.innerHTML = response.temp;
@@ -71,7 +71,7 @@ function allValuesDefined(json) {
 async function updateCityWeather(cityName,rowNumber) {
     try {
       let url =
-        "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" +
+        "'https://weather-api138.p.rapidapi.com/weather?city_name=" +
         cityName;
       let response = await fetch(url, options);
       response = await response.json();
