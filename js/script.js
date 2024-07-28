@@ -1,12 +1,13 @@
 let url ="https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=ongole";
 
 const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "1dff88b014msh86b40ee4768ce3ep1816a9jsn4ba88fd45220",
-    "X-RapidAPI-Host": "weather-by-api-ninjas.p.rapidapi.com",
-  },
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '1dff88b014msh86b40ee4768ce3ep1816a9jsn4ba88fd45220',
+		'x-rapidapi-host': 'weather-by-api-ninjas.p.rapidapi.com'
+	}
 };
+
 getWeather("ongole")
 
 async function getWeather(city) {
